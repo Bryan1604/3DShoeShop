@@ -14,6 +14,9 @@
 		8C599C7A2B3C18B700D0855A /* ShoeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C599C792B3C18B700D0855A /* ShoeAppTests.swift */; };
 		8C599C842B3C18B700D0855A /* ShoeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C599C832B3C18B700D0855A /* ShoeAppUITests.swift */; };
 		8C599C862B3C18B700D0855A /* ShoeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C599C852B3C18B700D0855A /* ShoeAppUITestsLaunchTests.swift */; };
+		8C599C942B3C18FB00D0855A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C599C932B3C18FB00D0855A /* Home.swift */; };
+		8C599C962B3C190F00D0855A /* CustomSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C599C952B3C190F00D0855A /* CustomSceneView.swift */; };
+		8C599C982B3C1A5100D0855A /* 3Dshoe.scn in Resources */ = {isa = PBXBuildFile; fileRef = 8C599C972B3C1A5100D0855A /* 3Dshoe.scn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		8C599C7F2B3C18B700D0855A /* ShoeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C599C832B3C18B700D0855A /* ShoeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeAppUITests.swift; sourceTree = "<group>"; };
 		8C599C852B3C18B700D0855A /* ShoeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8C599C932B3C18FB00D0855A /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		8C599C952B3C190F00D0855A /* CustomSceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSceneView.swift; sourceTree = "<group>"; };
+		8C599C972B3C1A5100D0855A /* 3Dshoe.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 3Dshoe.scn; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 		8C599C5C2B3C18B300D0855A = {
 			isa = PBXGroup;
 			children = (
+				8C599C972B3C1A5100D0855A /* 3Dshoe.scn */,
 				8C599C672B3C18B300D0855A /* ShoeApp */,
 				8C599C782B3C18B700D0855A /* ShoeAppTests */,
 				8C599C822B3C18B700D0855A /* ShoeAppUITests */,
@@ -94,6 +101,7 @@
 		8C599C672B3C18B300D0855A /* ShoeApp */ = {
 			isa = PBXGroup;
 			children = (
+				8C599C922B3C18DE00D0855A /* View */,
 				8C599C682B3C18B300D0855A /* ShoeAppApp.swift */,
 				8C599C6A2B3C18B300D0855A /* ContentView.swift */,
 				8C599C6C2B3C18B600D0855A /* Assets.xcassets */,
@@ -125,6 +133,15 @@
 				8C599C852B3C18B700D0855A /* ShoeAppUITestsLaunchTests.swift */,
 			);
 			path = ShoeAppUITests;
+			sourceTree = "<group>";
+		};
+		8C599C922B3C18DE00D0855A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C599C952B3C190F00D0855A /* CustomSceneView.swift */,
+				8C599C932B3C18FB00D0855A /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C599C982B3C1A5100D0855A /* 3Dshoe.scn in Resources */,
 				8C599C702B3C18B600D0855A /* Preview Assets.xcassets in Resources */,
 				8C599C6D2B3C18B600D0855A /* Assets.xcassets in Resources */,
 			);
@@ -257,7 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C599C962B3C190F00D0855A /* CustomSceneView.swift in Sources */,
 				8C599C6B2B3C18B300D0855A /* ContentView.swift in Sources */,
+				8C599C942B3C18FB00D0855A /* Home.swift in Sources */,
 				8C599C692B3C18B300D0855A /* ShoeAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +445,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +475,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
